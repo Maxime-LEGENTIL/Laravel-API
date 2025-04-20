@@ -15,7 +15,7 @@ return new class extends Migration
             $table->id();
 
             // Custom columns
-            $table->foreignId('customer_id')->constrained()->onDelete('cascade');
+            //$table->foreignId('customer_id')->constrained()->onDelete('cascade');
             $table->decimal('total_price', 10, 2);
             $table->string('status')->default('pending');
             // Custom columns

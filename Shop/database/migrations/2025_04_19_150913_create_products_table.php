@@ -19,6 +19,7 @@ return new class extends Migration
             $table->text('description')->nullable();      // description longue
             $table->decimal('price', 10, 2);              // prix (ex: 99.99)
             $table->unsignedInteger('stock');             // stock disponible
+            $table->string('slug');                       // slug du produit
             $table->string('sku')->nullable();            // code produit interne
             
             //$table->string('image')->nullable();          // chemin ou URL vers l’image

@@ -17,6 +17,8 @@ return new class extends Migration
             // Custom columns
             $table->string('name');
             $table->text('description')->nullable();
+            $table->string('icon');
+            $table->string(column: 'slug');
             // Custom columns
             
             $table->timestamps();

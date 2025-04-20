@@ -7,7 +7,7 @@ use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
 #[ApiResource]
-class Customer extends Model
+class PaymentStatus extends Model
 {
     //
     use HasFactory;
