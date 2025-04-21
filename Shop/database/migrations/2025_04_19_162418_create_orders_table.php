@@ -13,15 +13,14 @@ return new class extends Migration
     {
         Schema::create('orders', function (Blueprint $table) {
             $table->id();
-
-            // Custom columns
-            //$table->foreignId('customer_id')->constrained()->onDelete('cascade');
+        
+            $table->foreignId('user_id')->constrained()->onDelete('cascade'); // 👈 relation avec users
+        
             $table->decimal('total_price', 10, 2);
             $table->string('status')->default('pending');
-            // Custom columns
-
+        
             $table->timestamps();
-        });
+        });        
     }
 
     /**

@@ -138,6 +138,16 @@ return [
         // 'datetime_format' => \DateTimeInterface::RFC3339
     ],
 
+    // Maxime
+    'cors' => [
+        'allow_credentials' => true,
+        'allow_origin' => ['http://localhost:5173'],
+        'allow_headers' => ['Content-Type', 'Authorization'],
+        'allow_methods' => ['GET', 'POST', 'PUT', 'DELETE', 'PATCH', 'OPTIONS'],
+        'expose_headers' => ['Link'],
+        'max_age' => 3600,
+    ],
+
     // we recommend using "file" or "acpu"
     'cache' => 'file',
 ];
