@@ -7,7 +7,7 @@ use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
 #[ApiResource]
-class CartDetail extends Model
+class Address extends Model
 {
     //
     use HasFactory;
